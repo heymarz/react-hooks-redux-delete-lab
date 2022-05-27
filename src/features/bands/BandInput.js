@@ -13,18 +13,20 @@ function BandInput({ onBandSubmit }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Name
-        <input
-          type="text"
-          name="name"
-          value={name}
-          onChange={handleInputChange}
-        />
-      </label>
-      <button type="submit">Add Band</button>
-    </form>
+    <div>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Name
+          <input
+            type="text"
+            name="name"
+            value={name}
+            onChange={handleInputChange}
+          />
+        </label>
+        <button type="submit">Add Band</button>
+      </form>
+    </div>
   );
 }
 
